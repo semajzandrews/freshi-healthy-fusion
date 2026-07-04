@@ -9,6 +9,9 @@
   --color-leaf: #b8d94a;
   --color-leaf-deep: #4f7a1f;
   --color-berry: #ff9d8a;
+  --color-citrus-deep: #a85a00;
+  --color-mango-deep: #8a6200;
+  --color-berry-deep: #c14a33;
   --font-display: var(--font-khand);
   --font-body: var(--font-alpino);
 }

@@ -132,7 +132,7 @@ export default function Home() {
             <Reveal>
               <p className="kicker mb-3">About</p>
               <h2 className="text-[clamp(2.2rem,6vw,3.6rem)]">
-                Healthy, but make it <span className="text-citrus">Bloomfield.</span>
+                Healthy, but make it <span className="text-citrus-deep">Bloomfield.</span>
               </h2>
             </Reveal>
             <Reveal delay={140}>
