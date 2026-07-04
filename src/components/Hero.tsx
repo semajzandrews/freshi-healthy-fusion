@@ -70,8 +70,8 @@ export default function Hero() {
                 poster="/video/poster.jpg"
                 preload="metadata"
               >
-                <source src="/video/48342-720.mp4" type="video/mp4" media="(min-width: 640px)" />
-                <source src="/video/48342-360.mp4" type="video/mp4" />
+                <source src="/video/43918-720.mp4" type="video/mp4" media="(min-width: 640px)" />
+                <source src="/video/43918-360.mp4" type="video/mp4" />
               </video>
               <p className="display absolute bottom-3 left-4 rounded-full bg-ink/70 px-4 py-1 text-sm uppercase tracking-wider text-cream">
                 ● The blend cam
