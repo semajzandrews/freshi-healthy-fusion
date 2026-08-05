@@ -1,10 +1,13 @@
 import Image from "next/image";
 import BgMorph from "@/components/BgMorph";
 import CallPill from "@/components/CallPill";
+import CallOrText from "@/components/CallOrText";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import Reveal from "@/components/Reveal";
 import SmoothScroll from "@/components/SmoothScroll";
+
+import { site } from "@/lib/site";
 
 const ADDRESS = "313 Glenwood Ave, Bloomfield, NJ 07003";
 
@@ -146,12 +149,7 @@ export default function Home() {
                 back. Walk in, point at a color, walk out better.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href="tel:+19737072135"
-                  className="display rounded-full bg-ink px-6 py-2.5 text-base text-cream transition-transform hover:scale-105"
-                >
-                  Call (973) 707-2135
-                </a>
+                <CallOrText variant="inline" />
                 <a
                   href="https://www.instagram.com/freshihealthyfusion/"
                   target="_blank"
@@ -227,8 +225,8 @@ export default function Home() {
             </p>
             <p className="mt-2 text-sm text-ink-soft">{ADDRESS}</p>
             <p className="text-sm text-ink-soft">
-              <a href="tel:+19737072135" className="hover:text-ink">
-                (973) 707-2135
+              <a href={site.phoneHref} className="hover:text-ink">
+                {site.phone}
               </a>
               {" · "}
               <a

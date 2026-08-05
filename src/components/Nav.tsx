@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import CallOrText from "./CallOrText";
 
 const LINKS = [
   { href: "#menu", label: "Menu" },
@@ -38,12 +39,7 @@ export default function Nav() {
               {l.label}
             </a>
           ))}
-          <a
-            href="tel:+19737072135"
-            className="display rounded-full bg-ink px-4 py-1.5 text-sm text-cream transition-transform hover:scale-105"
-          >
-            (973) 707-2135
-          </a>
+          <CallOrText />
         </div>
       </nav>
     </header>
